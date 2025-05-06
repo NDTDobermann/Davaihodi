@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Клуб Настольных Игр</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Давай Ходи!</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: url('cthulhu-blur.jpg') center/cover no-repeat fixed;
+      backdrop-filter: blur(6px);
     }
+
     header {
-      background: #222;
+      background: url('cthulhu-header.jpg') center/cover no-repeat;
       color: white;
-      padding: 2rem 1rem;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 64, 0.5);
+      z-index: 0;
     }
-    main {
-      padding: 2rem 1rem;
+
+    header * {
+      position: relative;
+      z-index: 1;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 1rem auto;
+
+    .section, footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
     }
-    footer {
-      background: #eee;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #80ffb3;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Клуб Настольных Игр</h1>
-    <p>Мобильный клуб для школьников, студентов и семей</p>
+    <h1>Давай Ходи!</h1>
+    <p>Мобильный клуб настольных игр для школьников, студентов и семей</p>
   </header>
-  <main>
-    <p>Добро пожаловать! Здесь вы можете узнать о наших мероприятиях, записаться на встречи и открыть для себя мир настольных игр.</p>
-    <p>Скоро здесь появится больше информации!</p>
+
+  <main class="container">
+    <section class="section">
+      <h2>О проекте</h2>
+      <p>«Давай Ходи!» — это мобильный клуб настольных игр, который приезжает в школы, колледжи, вузы и на мероприятия. Мы создаём атмосферу живого общения, логики и веселья. В арсенале — десятки игр для разных возрастов и уровней.</p>
+    </section>
+
+    <section class="section">
+      <h2>Для кого мы?</h2>
+      <ul>
+        <li>Школьники 5–11 классов</li>
+        <li>Студенты колледжей и университетов</li>
+        <li>Семьи, родители с детьми</li>
+        <li>Все, кто любит настолки и живое общение</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Связаться с нами</h2>
+      <p>Телефон: <a href="tel:+79617029010">8-961-702-9010</a></p>
+    </section>
   </main>
-  <footer>
-    &copy; 2025 Клуб Настольных Игр. Все права защищены.
+
+  <footer class="container">
+    <p>© 2025 Давай Ходи! Все права защищены.</p>
   </footer>
 </body>
 </html>
